@@ -1,0 +1,181 @@
+// functions
+
+// CSS Rules
+* {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 20px;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background-color: rgb(57, 57, 57);
+}
+
+img {
+   -webkit-user-drag: none;
+   user-select: none;
+
+}
+
+$width: 280px * 2;
+$height: (3/5) * $width;
+
+#Container {
+   box-sizing: content-box;
+   width: $width;
+   height: $height;
+   background: url("../images/GameIMG/pf.png");
+   background-color: #91163e;
+   // background-size: 100% 100%;
+   background-size: $width $height;
+   border-radius: 10px;
+   border: solid black 5px;
+   transform: translate(-50%, -50%);
+   position: absolute;
+   top: 50%;
+   // top: 500px;
+   left: 50%;
+
+   #BottleContainer {
+      position: absolute;
+      width: (8/40)*$width;
+      height: (16/24)*$height;
+      // background-color: grey;
+      left: (17/40)*$width;
+      top: (5/24)*$height;
+
+      $width1: (1/8)*(8/40)*$width;
+
+      div {
+         width: $width1;
+         height: $width1;
+         // border: solid grey 1px;
+         // background: url("../images/GameIMG/bl_left.png");
+         position: absolute;
+         background-position: 0% 0%;
+         background-size: $width1 $width1;
+         background-repeat: no-repeat;
+      }
+   }
+
+   #StageComplete {
+      position: absolute;
+      width: (18/40)*$width;
+      height: (5/24)*$height;
+      left: (12/40)*$width;
+      top: (8/24)*$height;
+
+      background: url("../images/GameIMG/sc.png");
+      // background-size: 100% 100%;
+      background-size: (18/40)*$width (5/24)*$height;
+   }
+
+   #GameOver {
+      position: absolute;
+      width: (14/40)*$width;
+      height: (5/24)*$height;
+      // background-color: grey;
+      left: (14/40)*$width;
+      top: (8/24)*$height;
+      background: url("../images/GameIMG/go.png");
+      // background-size: 100% 100%;
+      background-size: (14/40)*$width (5/24)*$height;
+   }
+
+   #TopScoreContainer,
+   #ScoreContainer {
+      position: absolute;
+      width: (7/40)*$width;
+      height: (1/24)*$height;
+      left: (5/40)*$width;
+      transform: translate(1%, -8%);
+      background-color: rgb(0, 0, 0);
+
+      img {
+         height: 100%;
+      }
+   }
+
+   #TopScoreContainer {
+      top: (5/24)*$height;
+   }
+
+   #ScoreContainer {
+      top: (8/24)*$height;
+   }
+
+   #LevelContainer,
+   #VirusCountContainer {
+      position: absolute;
+      width: (2/40)*$width;
+      height: (1/24)*$height;
+      left: (35/40)*$width;
+      transform: translate(2%, -4%);
+      background-color: rgb(0, 0, 0);
+
+      img {
+         height: 100%;
+      }
+   }
+
+   #LevelContainer {
+      top: (15/24)*$height;
+   }
+
+   #VirusCountContainer {
+      top: (21/24)*$height;
+   }
+
+   #VirusesContainer {
+      position: absolute;
+      // background-color: rgba(0, 255, 255, 0.39);
+      width: (11/40)*$width;
+      height: (11/24)*$height;
+
+      left: (2/40)*$width;
+      top: (13/24 - 0.015)*$height;
+
+   }
+
+   .MaginifyVirus {
+      position: absolute;
+      width: (4/40)*$width;
+      height: (3/24)*$height;
+      // transform: translate(-50%, -50%);
+   }
+
+   #ThrowPillContainer {
+      position: absolute;
+      width: (12/40)*$width;
+      height: (8/24)*$height;
+      // background-color: grey;
+      left: (20/40)*$width;
+      top: (0/24)*$height;
+
+      $width1: (1/12)*(12/40)*$width;
+
+      div {
+         width: $width1;
+         height: $width1;
+         // border: dotted grey 1px;
+         // border-style: dotted;
+         // background: url("../images/GameIMG/bl_left.png");
+         position: absolute;
+         background-position: 0% 0%;
+         background-size: $width1 $width1;
+         background-repeat: no-repeat;
+      }
+   }
+
+   #MarioWindow {
+      position: absolute;
+      width: (9/40)*$width;
+      height: (9/24)*$height;
+      left: (29/40)*$width;
+      top: (2/24)*$height;
+   }
+}

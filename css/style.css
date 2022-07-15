@@ -1,0 +1,164 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #393939;
+}
+
+img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#Container {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 560px;
+  height: 336px;
+  background: url("../images/GameIMG/pf.png");
+  background-color: #91163e;
+  background-size: 560px 336px;
+  border-radius: 10px;
+  border: solid black 5px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#Container #BottleContainer {
+  position: absolute;
+  width: 112px;
+  height: 224px;
+  left: 238px;
+  top: 70px;
+}
+
+#Container #BottleContainer div {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  background-position: 0% 0%;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+#Container #StageComplete {
+  position: absolute;
+  width: 252px;
+  height: 70px;
+  left: 168px;
+  top: 112px;
+  background: url("../images/GameIMG/sc.png");
+  background-size: 252px 70px;
+}
+
+#Container #GameOver {
+  position: absolute;
+  width: 196px;
+  height: 70px;
+  left: 196px;
+  top: 112px;
+  background: url("../images/GameIMG/go.png");
+  background-size: 196px 70px;
+}
+
+#Container #TopScoreContainer,
+#Container #ScoreContainer {
+  position: absolute;
+  width: 98px;
+  height: 14px;
+  left: 70px;
+  -webkit-transform: translate(1%, -8%);
+          transform: translate(1%, -8%);
+  background-color: black;
+}
+
+#Container #TopScoreContainer img,
+#Container #ScoreContainer img {
+  height: 100%;
+}
+
+#Container #TopScoreContainer {
+  top: 70px;
+}
+
+#Container #ScoreContainer {
+  top: 112px;
+}
+
+#Container #LevelContainer,
+#Container #VirusCountContainer {
+  position: absolute;
+  width: 28px;
+  height: 14px;
+  left: 490px;
+  -webkit-transform: translate(2%, -4%);
+          transform: translate(2%, -4%);
+  background-color: black;
+}
+
+#Container #LevelContainer img,
+#Container #VirusCountContainer img {
+  height: 100%;
+}
+
+#Container #LevelContainer {
+  top: 210px;
+}
+
+#Container #VirusCountContainer {
+  top: 294px;
+}
+
+#Container #VirusesContainer {
+  position: absolute;
+  width: 154px;
+  height: 154px;
+  left: 28px;
+  top: 176.96px;
+}
+
+#Container .MaginifyVirus {
+  position: absolute;
+  width: 56px;
+  height: 42px;
+}
+
+#Container #ThrowPillContainer {
+  position: absolute;
+  width: 168px;
+  height: 112px;
+  left: 280px;
+  top: 0px;
+}
+
+#Container #ThrowPillContainer div {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  background-position: 0% 0%;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+#Container #MarioWindow {
+  position: absolute;
+  width: 126px;
+  height: 126px;
+  left: 406px;
+  top: 28px;
+}
+/*# sourceMappingURL=style.css.map */
